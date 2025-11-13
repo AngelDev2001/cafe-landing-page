@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Tradicional - Tu santuario del café</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Café Tradicional</div>
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#booking"><button class="book-btn">Reservar Mesa</button></a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" id="home">
+        <h1>Tu santuario del barrio para café exquisito</h1>
+        <p>Disfruta de bebidas elaboradas con maestría</p>
+        <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">Ver Menú</a>
+            <a href="#about" class="btn btn-secondary">Más Info</a>
+        </div>
+    </div>
+
+    <div class="info-bar">
+        <div class="info-item">
+            <span class="info-icon">🕐</span>
+            <div>
+                <strong>Lun - Vie</strong> 8 AM a 8 PM<br>
+                <strong>Sáb - Dom</strong> 7 AM a 9 PM
+            </div>
+        </div>
+        <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+                Calle Pedro Villalobos<br>
+                San Juan de Miraflores, Lima, Perú
+            </div>
+        </div>
+        <div class="info-item">
+            <span class="info-icon">📧</span>
+            <div>
+                (+51) 987654321<br>
+                contacto@cafetradicional.com
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="features" id="about">
+    <div class="features-content">
+        <div class="features-images">
+            <img src="./assets/images/tazas-de-cafe.jpg" alt="Tres tazas de café" class="feature-img">
+            <img src="./assets/images/tazas-de-cafe-2.jpg" alt="Tres tazas de café" class="feature-img feature-img-2">
+        </div>
+        <div class="features-text">
+            <h2>Disfruta de bebidas elaboradas con maestría hechas con los mejores granos de café.</h2>
+            <p>Encuentra delicias exquisitas y un ambiente cálido y acogedor.</p>
+            <ul class="features-list">
+                <li>Calidad Premium</li>
+                <li>Enfocado en la Comunidad</li>
+                <li>Ambiente Acogedor</li>
+                <li>Prácticas Ecológicas</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="flavors">
+    <div class="flavors-content">
+        <div>
+            <h2>Disfruta de los sabores ricos y robustos</h2>
+            <p>Café tostado localmente, apoyando tanto a tu paladar como a la comunidad local.</p>
+            <button class="btn btn-primary">Conoce Más</button>
+        </div>
+        <div class="flavor-image-container">
+            <img src="./assets/images/taza-de-cafe.jpg" alt="Una taza de café" class="flavor-img">
+        </div>
+    </div>
+</section>
+
+<section class="menu" id="menu">
+    <h2>Explora Nuestro Menú</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="./assets/images/taza-y-semillas-de-cafe.jpg" alt="Café espresso">
+            <div class="menu-item-title">Espresso</div>
+        </div>
+        <div class="menu-item">
+            <img src="./assets/images/taza-de-cafe-blanco.jpg" alt="Taza de cafe blanco">
+            <div class="menu-item-title">Café Preparado</div>
+        </div>
+        <div class="menu-item">
+            <img src="./assets/images/taza-de-cafe-y-tetera.jpg" alt="Taza de cafe y tetera">
+            <div class="menu-item-title">Selección de Té</div>
+        </div>
+        <div class="menu-item">
+            <img src="./assets/imiages/tazas-con-fresa.jpg" alt="Tazas con fresa">
+            <div class="menu-item-title">Pasteles & Postres</div>
+        </div>
+    </div>
+    <button class="btn btn-secondary">Ver Menú Completo</button>
+</section>
+
+<section class="sourcing">
+    <h2>Obtenemos nuestra leche y productos lácteos de granjas familiares cercanas.</h2>
+    <button class="btn btn-primary" style="margin-top: 1rem;">Conoce Más</button>
+</section>
+
+<section class="booking" id="booking">
+    <h2>Reserva Tu Mesa</h2>
+    <form class="booking-form" id="bookingForm">
+        <div class="form-group full-width">
+            <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+            <div class="error-message" id="nameError">Por favor ingresa tu nombre</div>
+        </div>
+        <div class="form-group full-width">
+            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            <div class="error-message" id="emailError">Por favor ingresa un email válido</div>
+        </div>
+        <div class="form-group">
+            <input type="date" id="date" name="date" placeholder="Fecha" required>
+            <div class="error-message" id="dateError">Por favor selecciona una fecha</div>
+        </div>
+        <div class="form-group">
+            <input type="time" id="time" name="time" placeholder="Hora" required>
+            <div class="error-message" id="timeError">Por favor selecciona una hora</div>
+        </div>
+        <div class="form-group full-width">
+            <select id="people" name="people" required>
+                <option value="">Número de personas</option>
+                <option value="1">1 persona</option>
+                <option value="2">2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5">5 personas</option>
+                <option value="6+">6+ personas</option>
+            </select>
+            <div class="error-message" id="peopleError">Por favor selecciona el número de personas</div>
+        </div>
+        <button type="submit" class="btn">Reservar Ahora</button>
+    </form>
+    <div class="success-message" id="successMessage">
+        ¡Reserva enviada exitosamente! Te contactaremos pronto para confirmar.
+    </div>
+</section>
+
+<footer id="faq">
+    <div class="footer-content">
+        <div>
+            <div class="footer-logo">☕ Café Tradicional</div>
+            <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                    Calle Pedro Villalobos<br>
+                    San Juan de Miraflores, Lima, Perú
+                </div>
+            </div>
+            <div class="info-item" style="margin-top: 1rem;">
+                <span class="info-icon">📧</span>
+                <div>
+                    (+51) 987654321<br>
+                    contacto@cafetradicional.com
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Enlaces Rápidos</h3>
+            <ul class="footer-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#booking">Reservar</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Menú Completo</h3>
+            <ul class="footer-links">
+                <li><a href="#">Bebidas Espresso</a></li>
+                <li><a href="#">Café Preparado</a></li>
+                <li><a href="#">Selección de Té</a></li>
+                <li><a href="#">Pasteles</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="./scripts/index.js"></script>
+</body>
+</html>
