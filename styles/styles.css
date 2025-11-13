@@ -277,8 +277,14 @@ nav {
 }
 
 .flavor-image-container {
+    max-width: 20rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 100%;
+    overflow: hidden;
 }
 
 .flavor-img {
