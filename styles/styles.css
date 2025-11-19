@@ -492,6 +492,12 @@ footer {
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
+
+    @media (max-width: 768px){
+        & > div {
+            justify-self: center;
+        }
+    }
 }
 
 .footer-logo {
@@ -516,6 +522,18 @@ footer {
 
 .footer-links a:hover {
     color: var(--cream);
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 5%;
+    text-align: center;
+
+    @media (max-width: 768px){
+        justify-content: center;
+    }
 }
 
 .social-links {
