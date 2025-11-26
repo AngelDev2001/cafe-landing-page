@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Café Tradicional</title>
+    <link rel="stylesheet" href="./styles/auth.css">
+</head>
+<body>
+<div class="auth-container">
+    <div class="auth-card">
+        <div class="auth-header">
+            <div class="logo-auth">☕ Café Tradicional</div>
+            <h2>Crea tu cuenta</h2>
+            <p>Únete a nuestra comunidad cafetera</p>
+        </div>
+
+        <form class="auth-form" id="registerForm">
+            <div class="form-group">
+                <label for="name">Nombre Completo</label>
+                <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Tu nombre completo"
+                        required
+                >
+                <div class="error-message" id="nameError">El nombre debe tener al menos 3 caracteres</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="correo@ejemplo.com"
+                        required
+                >
+                <div class="error-message" id="emailError">Por favor ingresa un correo válido</div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Teléfono (opcional)</label>
+                <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+51 987654321"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <div class="password-container">
+                    <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Mínimo 6 caracteres"
+                            required
+                    >
+                    <button type="button" class="toggle-password" id="togglePassword">
+                        <span class="eye-icon">👁️</span>
+                    </button>
+                </div>
+                <div class="password-strength" id="passwordStrength">
+                    <div class="strength-bar"></div>
+                </div>
+                <div class="error-message" id="passwordError">La contraseña debe tener al menos 6 caracteres</div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar Contraseña</label>
+                <div class="password-container">
+                    <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Repite tu contraseña"
+                            required
+                    >
+                    <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                        <span class="eye-icon">👁️</span>
+                    </button>
+                </div>
+                <div class="error-message" id="confirmPasswordError">Las contraseñas no coinciden</div>
+            </div>
+
+            <div class="form-options">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <span>Acepto los <a href="#">términos y condiciones</a></span>
+                </label>
+                <div class="error-message" id="termsError">Debes aceptar los términos y condiciones</div>
+            </div>
+
+            <button type="submit" class="btn-submit">Crear Cuenta</button>
+
+            <div class="auth-footer">
+                <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+                <a href="index.html" class="back-home">← Volver al inicio</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="./scripts/registro.js"></script>
+</body>
+</html>
